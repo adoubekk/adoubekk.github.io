@@ -12,7 +12,7 @@ import yaml
 with open('resume.yaml') as resume_yaml_file:
     resume_data = yaml.full_load(resume_yaml_file.read())
 
-with open('templates/resume.html') as html_template_file:
+with open('templates/resume.template.html') as html_template_file:
     html_template = html_template_file.read()
 
 with open('index.html', 'w') as html_out_file:

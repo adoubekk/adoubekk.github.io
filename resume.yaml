@@ -1,1 +1,63 @@
 name: Aaron Doubek-Kraft
+education:
+    - institution: University of California, Santa Cruz
+      start_date: September 2014
+      end_date: March 2019
+      degree: Computer Science B.A. with Highest Honors
+      courses:
+        - Advanced Programming
+        - Software Engineering
+        - Data Structures and Abstract Data Types
+        - Analysis of Algorithms
+        - Computer Graphics
+        - Data Visualization
+      thesis: Visualization of Graduate Admissions Data
+    - institution: University of California, Santa Cruz
+      start_date: September 2014
+      end_date: March 2019
+      degree: Physics(Astrophyics) B.S. with Highest Honors
+      courses:
+        - Physics of Stars
+        - General Relativity
+        - Nuclear and Particle Physics
+        - Classical Mechanics
+        - Quantum Mechanics
+        - Electricity and Magnetism
+        - Thermodynamics and Statistical Mechanics
+        - Advanced Astrophyics Labs
+        - Mathematical Methods (Linear Algebra, Differential Equations,
+          Complex Analysis, Probability and Statistics, Vector Calculus)
+      thesis: Bias Stability in the Large Synoptic Survey Telescope Camera
+experience:
+    - employer: Google
+      title: Engineering Resident
+      location: Mountain View, CA
+      start_date: July 2019
+      end_date: Present
+      description: One year training and technical rotation program for new
+          CS grads.
+    - employer: NASA Jet Propulsion Laboratory
+      title: Flight Software Intern
+      location: Pasadena, CA
+      start_date: June 2018
+      end_date: September 2018
+      description: Summer intern with the Small Scale Flight Software group,
+          which maintains the F' embedded systems framework.
+    - employer: NASA Ames Research Center
+      title: Software Developer Intern
+      location: Mountain View, CA
+      start_date: June 2017
+      end_date: August 2017
+      description: Summer intern for the Open MCT (Open Source Mission Control
+          Technologies) project, a web framework for building mission control
+          applications.
+skills:
+    - JavaScript/TypeScript (Angular, Vue, Polymer, Node, WebGL, jQuery, D3)
+    - HTML/CSS (Bootstrap, Material Design, SCSS)
+    - Python (Flask, SciPy/Numpy)
+    - Java
+    - C++
+    - Version control (git, mercurial, perforce)
+    - Unit testing
+    - bash
+    - LaTeX

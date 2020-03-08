@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title> ${name}'s Resume </title>
+    </head>
+
+    <body>
+        <h1> ${name} </h1>
+        <h2> Software Engineer </h2>
+
+        <h2> Education </h2>
+          #for $item in $education
+            <p>
+                <b>${item.degree}</b>,  ${item.institution},
+                ${item.start_date} - ${item.end_date}
+            </p>
+            <p>
+              Related Coursework:
+              <ul>
+                #for $course in $item.courses
+                  <li> ${course} </li>
+                #end for
+              </ul>
+            </p>
+          #end for
+
+        <h2> Experience </h2>
+          #for $role in $experience
+            <p>
+                <b>${role.title}</b>, ${role.employer}, ${role.location},
+                ${role.start_date} - ${role.end_date}
+            </p>
+            <p> ${role.description} </p>
+          #end for
+
+        <h2> Technical Skills </h2>
+            <ul>
+              #for $skill in $skills
+                <li>
+                  ${skill}
+                </li>
+              #end for
+            </ul>
+    </body>
+</html>
