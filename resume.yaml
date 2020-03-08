@@ -1,6 +1,7 @@
 name: Aaron Doubek-Kraft
 education:
-    - institution: University of California, Santa Cruz
+    - id: UCSC_CS
+      institution: University of California Santa Cruz
       start_date: September 2014
       end_date: March 2019
       degree: Computer Science B.A. with Highest Honors
@@ -12,10 +13,11 @@ education:
         - Computer Graphics
         - Data Visualization
       thesis: Visualization of Graduate Admissions Data
-    - institution: University of California, Santa Cruz
+    - id: UCSC_PHYS
+      institution: University of California Santa Cruz
       start_date: September 2014
       end_date: March 2019
-      degree: Physics(Astrophyics) B.S. with Highest Honors
+      degree: Physics (Astrophyics) B.S. with Highest Honors
       courses:
         - Physics of Stars
         - General Relativity

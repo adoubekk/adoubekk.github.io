@@ -1,44 +1,67 @@
-<html>
-    <head>
-        <title> ${name}'s Resume </title>
-    </head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <title> ${name}'s Resume </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </head>
 
-    <body>
-        <h1> ${name} </h1>
-        <h2> Software Engineer </h2>
+  <body>
+    <h1 class="display-4 border-bottom ml-2 pb-2">
+      ${name}
+      <small class="text-muted"> Software Engineer </small>
+    </h1>
+    <main class="mt-3 mx-4">
 
-        <h2> Education </h2>
-          #for $item in $education
-            <p>
-                <b>${item.degree}</b>,  ${item.institution},
-                ${item.start_date} - ${item.end_date}
+      <h1> Education </h1>
+      #for $item in $education
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">${item.degree}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">
+              ${item.institution}, ${item.start_date} - ${item.end_date}
+            </h6>
+            <p class="card-text">
+              Thesis: ${item.thesis}
             </p>
-            <p>
-              Related Coursework:
-              <ul>
-                #for $course in $item.courses
-                  <li> ${course} </li>
-                #end for
-              </ul>
-            </p>
-          #end for
+            <button class="btn btn-outline-info btn-sm" type="button" data-toggle="collapse" data-target="#courses-${item.id}" aria-expanded="false" aria-controls="collapseExample">
+              Show Related Coursework
+            </button>
+          </div>
+          <ul id="courses-${item.id}" class=" collapse list-group list-group-flush border-top">
+            #for $course in $item.courses
+            <li class="list-group-item"> ${course} </li>
+            #end for
+          </ul>
+        </div>
+      #end for
 
-        <h2> Experience </h2>
-          #for $role in $experience
-            <p>
-                <b>${role.title}</b>, ${role.employer}, ${role.location},
-                ${role.start_date} - ${role.end_date}
+      <h1> Experience </h1>
+      #for $role in $experience
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title"> ${role.title} </h5>
+            <h6 class="card-subtitle mb-2 text-muted">
+              ${role.employer}, ${role.location},
+              ${role.start_date} - ${role.end_date}
+            </h6>
+            <p class="card-text">
+              ${role.description}
             </p>
-            <p> ${role.description} </p>
-          #end for
+          </div>
+        </div>
+      #end for
 
-        <h2> Technical Skills </h2>
-            <ul>
-              #for $skill in $skills
-                <li>
-                  ${skill}
-                </li>
-              #end for
-            </ul>
-    </body>
+      <h1> Technical Skills </h1>
+      <ul class="list-group">
+        #for $skill in $skills
+          <li class="list-group-item"> ${skill} </li>
+        #end for
+      </ul>
+    </main>
+  </body>
 </html>

@@ -1,93 +1,121 @@
-<html>
-    <head>
-        <title> Aaron Doubek-Kraft's Resume </title>
-    </head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <title> Aaron Doubek-Kraft's Resume </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </head>
 
-    <body>
-        <h1> Aaron Doubek-Kraft </h1>
-        <h2> Software Engineer </h2>
+  <body>
+    <h1 class="display-4 border-bottom ml-2 pb-2">
+      Aaron Doubek-Kraft
+      <small class="text-muted"> Software Engineer </small>
+    </h1>
+    <main class="mt-3 mx-4">
 
-        <h2> Education </h2>
-            <p>
-                <b>Computer Science B.A. with Highest Honors</b>,  University of California, Santa Cruz,
-                September 2014 - March 2019
+      <h1> Education </h1>
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Computer Science B.A. with Highest Honors</h5>
+            <h6 class="card-subtitle mb-2 text-muted">
+              University of California Santa Cruz, September 2014 - March 2019
+            </h6>
+            <p class="card-text">
+              Thesis: Visualization of Graduate Admissions Data
             </p>
-            <p>
-              Related Coursework:
-              <ul>
-                  <li> Advanced Programming </li>
-                  <li> Software Engineering </li>
-                  <li> Data Structures and Abstract Data Types </li>
-                  <li> Analysis of Algorithms </li>
-                  <li> Computer Graphics </li>
-                  <li> Data Visualization </li>
-              </ul>
+            <button class="btn btn-outline-info btn-sm" type="button" data-toggle="collapse" data-target="#courses-UCSC_CS" aria-expanded="false" aria-controls="collapseExample">
+              Show Related Coursework
+            </button>
+          </div>
+          <ul id="courses-UCSC_CS" class=" collapse list-group list-group-flush border-top">
+            <li class="list-group-item"> Advanced Programming </li>
+            <li class="list-group-item"> Software Engineering </li>
+            <li class="list-group-item"> Data Structures and Abstract Data Types </li>
+            <li class="list-group-item"> Analysis of Algorithms </li>
+            <li class="list-group-item"> Computer Graphics </li>
+            <li class="list-group-item"> Data Visualization </li>
+          </ul>
+        </div>
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Physics (Astrophyics) B.S. with Highest Honors</h5>
+            <h6 class="card-subtitle mb-2 text-muted">
+              University of California Santa Cruz, September 2014 - March 2019
+            </h6>
+            <p class="card-text">
+              Thesis: Bias Stability in the Large Synoptic Survey Telescope Camera
             </p>
-            <p>
-                <b>Physics(Astrophyics) B.S. with Highest Honors</b>,  University of California, Santa Cruz,
-                September 2014 - March 2019
-            </p>
-            <p>
-              Related Coursework:
-              <ul>
-                  <li> Physics of Stars </li>
-                  <li> General Relativity </li>
-                  <li> Nuclear and Particle Physics </li>
-                  <li> Classical Mechanics </li>
-                  <li> Quantum Mechanics </li>
-                  <li> Electricity and Magnetism </li>
-                  <li> Thermodynamics and Statistical Mechanics </li>
-                  <li> Advanced Astrophyics Labs </li>
-                  <li> Mathematical Methods (Linear Algebra, Differential Equations, Complex Analysis, Probability and Statistics, Vector Calculus) </li>
-              </ul>
-            </p>
+            <button class="btn btn-outline-info btn-sm" type="button" data-toggle="collapse" data-target="#courses-UCSC_PHYS" aria-expanded="false" aria-controls="collapseExample">
+              Show Related Coursework
+            </button>
+          </div>
+          <ul id="courses-UCSC_PHYS" class=" collapse list-group list-group-flush border-top">
+            <li class="list-group-item"> Physics of Stars </li>
+            <li class="list-group-item"> General Relativity </li>
+            <li class="list-group-item"> Nuclear and Particle Physics </li>
+            <li class="list-group-item"> Classical Mechanics </li>
+            <li class="list-group-item"> Quantum Mechanics </li>
+            <li class="list-group-item"> Electricity and Magnetism </li>
+            <li class="list-group-item"> Thermodynamics and Statistical Mechanics </li>
+            <li class="list-group-item"> Advanced Astrophyics Labs </li>
+            <li class="list-group-item"> Mathematical Methods (Linear Algebra, Differential Equations, Complex Analysis, Probability and Statistics, Vector Calculus) </li>
+          </ul>
+        </div>
 
-        <h2> Experience </h2>
-            <p>
-                <b>Engineering Resident</b>, Google, Mountain View, CA,
-                July 2019 - Present
+      <h1> Experience </h1>
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title"> Engineering Resident </h5>
+            <h6 class="card-subtitle mb-2 text-muted">
+              Google, Mountain View, CA,
+              July 2019 - Present
+            </h6>
+            <p class="card-text">
+              One year training and technical rotation program for new CS grads.
             </p>
-            <p> One year training and technical rotation program for new CS grads. </p>
-            <p>
-                <b>Flight Software Intern</b>, NASA Jet Propulsion Laboratory, Pasadena, CA,
-                June 2018 - September 2018
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title"> Flight Software Intern </h5>
+            <h6 class="card-subtitle mb-2 text-muted">
+              NASA Jet Propulsion Laboratory, Pasadena, CA,
+              June 2018 - September 2018
+            </h6>
+            <p class="card-text">
+              Summer intern with the Small Scale Flight Software group, which maintains the F' embedded systems framework.
             </p>
-            <p> Summer intern with the Small Scale Flight Software group, which maintains the F' embedded systems framework. </p>
-            <p>
-                <b>Software Developer Intern</b>, NASA Ames Research Center, Mountain View, CA,
-                June 2017 - August 2017
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title"> Software Developer Intern </h5>
+            <h6 class="card-subtitle mb-2 text-muted">
+              NASA Ames Research Center, Mountain View, CA,
+              June 2017 - August 2017
+            </h6>
+            <p class="card-text">
+              Summer intern for the Open MCT (Open Source Mission Control Technologies) project, a web framework for building mission control applications.
             </p>
-            <p> Summer intern for the Open MCT (Open Source Mission Control Technologies) project, a web framework for building mission control applications. </p>
+          </div>
+        </div>
 
-        <h2> Technical Skills </h2>
-            <ul>
-                <li>
-                  JavaScript/TypeScript (Angular, Vue, Polymer, Node, WebGL, jQuery, D3)
-                </li>
-                <li>
-                  HTML/CSS (Bootstrap, Material Design, SCSS)
-                </li>
-                <li>
-                  Python (Flask, SciPy/Numpy)
-                </li>
-                <li>
-                  Java
-                </li>
-                <li>
-                  C++
-                </li>
-                <li>
-                  Version control (git, mercurial, perforce)
-                </li>
-                <li>
-                  Unit testing
-                </li>
-                <li>
-                  bash
-                </li>
-                <li>
-                  LaTeX
-                </li>
-            </ul>
-    </body>
+      <h1> Technical Skills </h1>
+      <ul class="list-group">
+          <li class="list-group-item"> JavaScript/TypeScript (Angular, Vue, Polymer, Node, WebGL, jQuery, D3) </li>
+          <li class="list-group-item"> HTML/CSS (Bootstrap, Material Design, SCSS) </li>
+          <li class="list-group-item"> Python (Flask, SciPy/Numpy) </li>
+          <li class="list-group-item"> Java </li>
+          <li class="list-group-item"> C++ </li>
+          <li class="list-group-item"> Version control (git, mercurial, perforce) </li>
+          <li class="list-group-item"> Unit testing </li>
+          <li class="list-group-item"> bash </li>
+          <li class="list-group-item"> LaTeX </li>
+      </ul>
+    </main>
+  </body>
 </html>
