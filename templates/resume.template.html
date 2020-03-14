@@ -11,57 +11,74 @@
   </head>
 
   <body>
-    <h1 class="display-4 border-bottom ml-2 pb-2">
+    <h1 class="display-4 border-bottom ml-2 pb-2 mb-0">
       ${name}
       <small class="text-muted"> Software Engineer </small>
     </h1>
-    <main class="mt-3 mx-4">
+    <main class="container mt-0 mx-4">
+      <div class="row">
+        <div class="col-sm-2">
+          <h2 class="mt-4"> Education </h2>
+        </div>
+        <div class="col-sm-6 pl-0 border-left">
+          #for $item in $education
+            <div class="card border-light mt-2">
+              <div class="card-body pb-2">
+                <h5 class="card-title">${item.degree}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  ${item.institution}, ${item.start_date} - ${item.end_date}
+                </h6>
+                <p class="card-text">
+                  Thesis: ${item.thesis}
+                </p>
+                <button class="btn btn-outline-info btn-sm" type="button" data-toggle="collapse" data-target="#courses-${item.id}" aria-expanded="false" aria-controls="collapseExample">
+                  Show Related Coursework
+                </button>
+              </div>
+              <ul id="courses-${item.id}" class="collapse list-group list-group-flush border-bottom">
+                #for $course in $item.courses
+                <li class="list-group-item"> ${course} </li>
+                #end for
+              </ul>
+            </div>
+          #end for
+        </div>
+      </div>
 
-      <h1> Education </h1>
-      #for $item in $education
-        <div class="card mb-3">
-          <div class="card-body">
-            <h5 class="card-title">${item.degree}</h5>
-            <h6 class="card-subtitle mb-2 text-muted">
-              ${item.institution}, ${item.start_date} - ${item.end_date}
-            </h6>
-            <p class="card-text">
-              Thesis: ${item.thesis}
-            </p>
-            <button class="btn btn-outline-info btn-sm" type="button" data-toggle="collapse" data-target="#courses-${item.id}" aria-expanded="false" aria-controls="collapseExample">
-              Show Related Coursework
-            </button>
-          </div>
-          <ul id="courses-${item.id}" class=" collapse list-group list-group-flush border-top">
-            #for $course in $item.courses
-            <li class="list-group-item"> ${course} </li>
+      <div class="row">
+        <div class="col-sm-2">
+          <h2 class="mt-4"> Experience </h2>
+        </div>
+        <div class="col-sm-6 pl-0 border-left">
+          #for $role in $experience
+            <div class="card border-light mt-2">
+              <div class="card-body pb-3">
+                <h5 class="card-title"> ${role.title} </h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  ${role.employer}, ${role.location},
+                  ${role.start_date} - ${role.end_date}
+                </h6>
+                <p class="card-text">
+                  ${role.description}
+                </p>
+              </div>
+            </div>
+          #end for
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-2">
+          <h2 class="mt-4"> Technical Skills </h2>
+        </div>
+        <div class="col-sm-6 pl-0 border-left">
+          <ul class="list-group mt-4">
+            #for $skill in $skills
+              <li class="list-group-item border-left-0 border-right-0 border-top-0"> ${skill} </li>
             #end for
           </ul>
         </div>
-      #end for
-
-      <h1> Experience </h1>
-      #for $role in $experience
-        <div class="card mb-3">
-          <div class="card-body">
-            <h5 class="card-title"> ${role.title} </h5>
-            <h6 class="card-subtitle mb-2 text-muted">
-              ${role.employer}, ${role.location},
-              ${role.start_date} - ${role.end_date}
-            </h6>
-            <p class="card-text">
-              ${role.description}
-            </p>
-          </div>
-        </div>
-      #end for
-
-      <h1> Technical Skills </h1>
-      <ul class="list-group">
-        #for $skill in $skills
-          <li class="list-group-item"> ${skill} </li>
-        #end for
-      </ul>
+      </div>
     </main>
   </body>
 </html>
