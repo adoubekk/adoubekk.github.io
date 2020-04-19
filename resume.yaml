@@ -32,10 +32,17 @@ education:
       thesis: Bias Stability in the Large Synoptic Survey Telescope Camera
 experience:
     - employer: Google
+      title: Software Engineer
+      location: Mountain View, CA
+      start_date: April 2020
+      end_date: Present
+      description: Web-based media comparison tools for hardware engineers.
+          Full stack web apps (Angular, Node.js) and graphics (WebGL).
+    - employer: Google
       title: Engineering Resident
       location: Mountain View, CA
       start_date: July 2019
-      end_date: Present
+      end_date: April 2020
       description: One year training and technical rotation program for new
           CS grads.
     - employer: NASA Jet Propulsion Laboratory
